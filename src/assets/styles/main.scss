@@ -1,0 +1,44 @@
+/**
+ * Import variables
+ */
+
+@import "variables";
+
+/**
+ * Import npm dependencies
+ * see: https://en.parceljs.org/module_resolution.html
+ * see commented examples below
+ */
+
+// @import "some-node-module";
+// @import "@some-company/some-node-module";
+
+@import "@fortawesome/fontawesome-free/css/all.css";
+@import "~bootstrap/scss/bootstrap.scss";
+
+/**
+ * Import layouts
+ * It's a best practice to use a partial for each page
+ */
+
+@import "layouts/home";
+
+/**
+ * Do NOT include anything else in this file!
+ */
+@import "layouts/config";
+
+//Importación de los mixin;
+@import "mixin";
+
+// importación de los componentes. Estilos genéricos y clases
+@import "layouts/componentes";
+
+// Estilos generales: HTML, Main, body, etc
+@import "layouts/generico";
+
+// Configuración etiquetas genéricas (sin clase), H1 a H6, <p>, nav, footer, etc
+@import "layouts/elementos";
+
+// Importación de imágenes:
+@import "layouts/objetos";

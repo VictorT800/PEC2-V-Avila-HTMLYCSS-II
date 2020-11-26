@@ -1,0 +1,8 @@
+// Estilos genéricos de las diferentes partes concretas, clases específicas, etc.
+
+// ---------- Diseño página principal:
+.fotofondo {
+  & img {
+    width: 100%;
+  }
+}
