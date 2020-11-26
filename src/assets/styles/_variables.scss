@@ -8,4 +8,11 @@ $uoc-masterbrand: #73edff;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
 // ---- Colores globales:
-$music-bg: #f60;
+$music-bg: #eed7d7;
+$music-font: #f1e5e5;
+$music-h1-color: #f1e5e5;
+$music-h2-color: #eed7d7;
+$music-h4-color: #fdfefe;
+
+// ---- Sombras:
+$music-h1-shadow: 0 8px 9px #fb0cb2, 0 -2px 1px #8e246d;

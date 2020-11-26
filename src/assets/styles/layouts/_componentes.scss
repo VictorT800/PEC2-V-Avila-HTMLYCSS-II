@@ -2,7 +2,43 @@
 
 // ---------- Diseño página principal:
 .fotofondo {
+  position: relative;
+
   & img {
     width: 100%;
+  }
+}
+
+.titulos {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 40%;
+}
+
+//media-queries para adaptar foto inicio y titulos
+@media (max-width: 1490px) {
+  .titulos {
+    top: 30%;
+  }
+}
+
+@media (max-width: 940px) {
+  .titulos {
+    top: 22%;
+  }
+}
+
+@media (max-width: 644px) {
+  .titulos {
+    top: 18%;
+  }
+}
+
+@media (max-width: 500px) {
+  .titulos {
+    top: 15%;
   }
 }
