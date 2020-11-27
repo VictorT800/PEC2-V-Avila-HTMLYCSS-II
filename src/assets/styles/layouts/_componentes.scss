@@ -18,6 +18,49 @@
   top: 40%;
 }
 
+// ---- Diseño del Grid página inicio:
+.contenedorGrid {
+  padding-top: 50px;
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr) minmax(160px, 1fr);
+  grid-template-rows: minmax(245px, auto) minmax(245px, auto) minmax(245px, auto);
+  width: 95%;
+  max-width: 1150px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  //margin-bottom: 70px;
+}
+
+.contenedorGrid .impar {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.contenedorGrid .par {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.negro {
+  background-color: black;
+  height: 100%;
+  color: white;
+  //font-size: 75px;
+  //text-align: center;
+}
+
+.blanco {
+  background-color: white;
+  height: 100%;
+  color: black;
+  //font-size: 26px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
 //media-queries para adaptar foto inicio y titulos
 @media (max-width: 1490px) {
   .titulos {
