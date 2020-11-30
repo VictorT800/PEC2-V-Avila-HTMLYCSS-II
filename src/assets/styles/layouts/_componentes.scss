@@ -25,7 +25,7 @@
   grid-gap: 8px;
   grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr) minmax(160px, 1fr);
   grid-template-rows: minmax(245px, auto) minmax(245px, auto) minmax(245px, auto);
-  width: 95%;
+  width: 98%;
   max-width: 1150px;
   margin: auto;
   align-items: center;
@@ -45,20 +45,136 @@
 }
 
 .negro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: black;
   height: 100%;
-  color: white;
-  //font-size: 75px;
+  //color: white;
+  //font-size: $sz-pc-class-negro;
+  font-weight: lighter;
+  //font-size: 3vw;
   //text-align: center;
+
+  & p {
+    font-size: $sz-pc-class-negro;
+    color: white;
+  }
 }
 
 .blanco {
+  display: flex;
+  align-items: center;
   background-color: white;
   height: 100%;
-  color: black;
-  //font-size: 26px;
+  //color: black;
+  //font-size: $sz-pc-class-blanco;
+  //font-size: 1.4vw;
   padding-left: 8px;
   padding-right: 8px;
+
+  & p {
+    font-size: $sz-pc-class-blanco;
+    color: black;
+  }
+}
+
+// ---- Diseño de la página de PARTICIPANTES
+.title-participantes {
+  @include text-shadow($music-h3-shadow);
+  text-align: center;
+  color: #eed7d7;
+  margin-top: 100px;
+  font-size: 40px;
+}
+
+.contenedor {
+  max-width: 1150px;
+  margin: auto;
+  width: 98%;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.grupo {
+  flex: 0 1 calc(33%);
+}
+
+.contenido-grupo {
+  text-align: center;
+
+  & p {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
+.fecha-canta {
+  padding-bottom: 10px;
+}
+
+// ---- FOOTER ---- 
+.legalYredes {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  width: 95%;
+  //max-width: 1200px;
+}
+
+.redes {
+  & ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+
+    & li {
+      display: inline-block;
+
+      & a {
+        & img {
+          width: $sz-redes-footer;
+          padding: 10px;
+          transition: 0.4s;
+  
+          &:hover {
+            transform: scale(1.5);
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-footer {
+  & ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    //margin-top: 15px;
+
+    & li {
+      display: inline-block;
+
+      & a {
+        font-size: $sz-icon-footer;
+        padding: 18px;
+
+        & i {
+          transition: 0.4s;
+          padding: 18px;
+
+          &:hover {
+            transform: scale(1.8);
+          }
+        }
+      }
+    }
+  }
 }
 
 //media-queries para adaptar foto inicio y titulos
@@ -83,5 +199,75 @@
 @media (max-width: 500px) {
   .titulos {
     top: 15%;
+  }
+}
+
+// ---- Resto de media-queries:
+
+@media (max-width: 1140px) {
+  .blanco {
+    font-size: 22px;
+  }
+}
+
+// ---- Media-queries para página de Participantes:
+@media (max-width: 1050px) {
+  .grupo {
+    flex: 0 1 calc(50%);
+    padding: 2px;
+  }
+
+  .contenedor {
+    justify-content: center;
+  }
+
+  .nav-footer {
+    & ul {
+      & li {
+        & a {
+          & i {
+            font-size: $sz-icon-footer-media-q;
+            padding: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  .redes {
+    & ul {
+      & li {
+        & a {
+          & img {
+            width: $sz-redes-footer-media-q;
+            padding: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  .legalYredes {
+    & img {
+      max-width: 80%;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .legalYredes {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .grupo {
+    flex: 0 1 100%;
   }
 }

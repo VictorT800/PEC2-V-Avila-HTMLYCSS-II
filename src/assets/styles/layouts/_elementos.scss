@@ -23,12 +23,26 @@ h2 {
   border-radius: 20px;
 }
 
+h3 {
+  color: $music-h3-color;
+  margin-top: 8px;
+}
+
 h4 {
   color: $music-h4-color;
   //text-align: center;
   //margin-top: 290px;
   margin-top: 12%;
   font-size: 100px;
+}
+
+p {
+  font-size: $sz-msc-p;
+  color: $music-p-color;
+}
+
+img {
+  max-width: 100%;
 }
 
 nav {
@@ -38,10 +52,23 @@ nav {
         & i {
           padding: $icon-padding;
           color: $icon-color;
+          font-size: $sz-icon-nav;
+
+          &:hover {
+            color: $msc-color-hover;
+          }
         }
       }
     }
   }
+}
+
+footer {
+  //max-width: 1200px;
+  margin: auto;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-top: 1px solid grey;
 }
 
 @media (max-width: 1490px) {
