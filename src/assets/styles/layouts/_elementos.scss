@@ -36,6 +36,10 @@ h4 {
   font-size: 100px;
 }
 
+h5 {
+  color: $music-h5-color;
+}
+
 p {
   font-size: $sz-msc-p;
   color: $music-p-color;
@@ -43,6 +47,16 @@ p {
 
 img {
   max-width: 100%;
+}
+
+blockquote {
+  color: $music-p-color;
+  padding-left: 40px;
+  font-family: serif;
+}
+
+q {
+  font-family: serif;
 }
 
 nav {
@@ -68,7 +82,7 @@ footer {
   margin: auto;
   padding-top: 18px;
   padding-bottom: 18px;
-  border-top: 1px solid grey;
+  //border-top: 1px solid grey;
 }
 
 @media (max-width: 1490px) {

@@ -1,6 +1,6 @@
 // Estilos genéricos de las diferentes partes concretas, clases específicas, etc.
 
-// ---------- Diseño página principal:
+// -------------------- Diseño página principal: ----------------------
 .fotofondo {
   position: relative;
 
@@ -18,7 +18,7 @@
   top: 40%;
 }
 
-// ---- Diseño del Grid página inicio:
+// ----------------- Diseño del Grid página inicio: -----------------
 .contenedorGrid {
   padding-top: 50px;
   display: grid;
@@ -79,7 +79,7 @@
   }
 }
 
-// ---- Diseño de la página de PARTICIPANTES
+// ----------------- Diseño de la página de PARTICIPANTES ------------------
 .title-participantes {
   @include text-shadow($music-h3-shadow);
   text-align: center;
@@ -115,7 +115,39 @@
   padding-bottom: 10px;
 }
 
-// ---- FOOTER ---- 
+// ---------------- Diseño página Noticias ---------------------- 
+.flex-noticias {
+  max-width: 1150px;
+  margin: auto;
+  width: 98%;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-noticia {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-noticia > div {
+  width: 50%;
+  padding: 12px;
+}
+
+// ----------------- Página extra Ticket -----------------
+.ticket {
+  display: flex;
+  padding-top: 80px;
+  height: 90vh;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+// -------------------- FOOTER ------------------------- 
 .legalYredes {
   margin: auto;
   display: flex;
@@ -278,6 +310,14 @@
   .nav-footer {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  .flex-noticia {
+    flex-direction: column;
+  }
+
+  .flex-noticia > div {
+    width: 98%;
   }
 }
 
