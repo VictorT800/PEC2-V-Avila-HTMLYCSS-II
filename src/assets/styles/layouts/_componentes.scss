@@ -25,13 +25,9 @@
   grid-gap: 8px;
   grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr) minmax(160px, 1fr);
   grid-template-rows: minmax(245px, auto) minmax(245px, auto) minmax(245px, auto);
-  //width: 98%;
-  //max-width: 1150px;
-  //margin: auto;
   align-items: center;
   justify-content: center;
   height: 100%;
-  //margin-bottom: 70px;
 }
 
 @supports not (display: grid) {
@@ -68,16 +64,9 @@
 }
 
 .negro {
-  //display: flex;
-  //align-items: center;
   justify-content: center;
   background-color: black;
-  //height: 100%;
-  //color: white;
-  //font-size: $sz-pc-class-negro;
   font-weight: lighter;
-  //font-size: 3vw;
-  //text-align: center;
 
   & p {
     font-size: $sz-pc-class-negro;
@@ -86,13 +75,7 @@
 }
 
 .blanco {
-  //display: flex;
-  //align-items: center;
   background-color: white;
-  //height: 100%;
-  //color: black;
-  //font-size: $sz-pc-class-blanco;
-  //font-size: 1.4vw;
   padding-left: 8px;
   padding-right: 8px;
 
@@ -112,9 +95,6 @@
 }
 
 .contenedor {
-  //max-width: 1150px;
-  //margin: auto;
-  //width: 98%;
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
@@ -167,16 +147,11 @@
 .cripto {
   display: flex;
   flex-direction: row;
-  //justify-content: space-between;
 }
 
 .cripto-in {
-  //max-width: 360px;
-  //flex: 1 1 auto;
   display: flex;
-  //justify-content: space-around;
-  //padding-left: 30px;
-  //flex: 1 1 50%;
+  
   & > div {
     flex: 1 1 48%;
     padding-left: 30px;
@@ -217,7 +192,6 @@
   align-items: center;
   font-size: 16px;
   width: 95%;
-  //max-width: 1200px;
 }
 
 .redes {
